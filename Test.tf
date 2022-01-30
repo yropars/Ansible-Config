@@ -1,6 +1,6 @@
 variable "project_id" {
   type        = string
-  description = "Your project ID."
+  description = "Ubuntu-Nextcloud"
 }
 
 terraform {
