@@ -1,3 +1,8 @@
+variable "project_id" {
+  type        = string
+  description = "project_id"
+}
+
 terraform {
   required_providers {
     scaleway = {
@@ -6,10 +11,7 @@ terraform {
   }
   required_version = ">= 0.13"
 }
-variable "project_id" {
-  type        = string
-  description = "project_id"
-}
+
 # Mise en place d'une IP publique
 resource "scaleway_instance_ip" "public_ip" {
   project_id = var.project_id
@@ -17,6 +19,7 @@ resource "scaleway_instance_ip" "public_ip" {
 resource "scaleway_instance_ip" "public_ip_backup" {
   project_id = var.project_id
 }
+
 # Mis een place d'un volume, c'est-à-dire un espace de stockage utilisable par la machine virtuelle
 resource "scaleway_instance_volume" "data" {
   project_id = var.project_id
