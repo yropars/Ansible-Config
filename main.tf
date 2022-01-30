@@ -8,7 +8,7 @@ terraform {
 }
 variable "project_id" {
   type        = string
-  description = ba193c7e-395f-4e3f-a1f8-048e9e8b7cb4
+  description = "ba193c7e-395f-4e3f-a1f8-048e9e8b7cb4"
 }
 # Mise en place d'une IP publique
 resource "scaleway_instance_ip" "public_ip" {
