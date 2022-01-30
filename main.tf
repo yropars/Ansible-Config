@@ -35,7 +35,7 @@ resource "scaleway_instance_volume" "data_backup" {
 
 resource "scaleway_instance_security_group" "www" {
   project_id              = var.project_id
-  inbound_default_policy  = "accept"
+  inbound_default_policy  = "drop"
   outbound_default_policy = "accept"
 
   inbound_rule {
