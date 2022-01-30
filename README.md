@@ -1,4 +1,4 @@
-# Ansible-Config
+# Terraform-Config
 Création d'une VM sur Scaleway et installation de Nextcloud via Ansible
 
 # Create a VM on Scaleway
