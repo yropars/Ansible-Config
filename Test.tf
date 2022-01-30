@@ -16,14 +16,14 @@ provider "scaleway" {
   zone   = "fr-par-1"
   region = "fr-par"
 }
-
+# Mise en place d'une IP publique
 resource "scaleway_instance_ip" "public_ip" {
   project_id = var.project_id
 }
 resource "scaleway_instance_ip" "public_ip_backup" {
   project_id = var.project_id
 }
-
+# Mis een place d'un volume, c'est-à-dire un espace de stockage utilisable par la machine virtuelle
 resource "scaleway_instance_volume" "data" {
   project_id = var.project_id
   size_in_gb = 30
