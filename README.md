@@ -1,4 +1,4 @@
-# Terraform-Config
+# TP : Automatisation d'un déploiement Cloud avec Terraform
 Création d'une VM sur Scaleway et installation de Nextcloud via Ansible
 
 # Create a VM on Scaleway
