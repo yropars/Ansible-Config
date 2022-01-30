@@ -2,20 +2,6 @@ variable "project_id" {
   type        = string
   description = "Ubuntu-Nextcloud"
 }
-
-terraform {
-  required_providers {
-    scaleway = {
-      source = "scaleway/scaleway"
-    }
-  }
-  required_version = ">= 0.13"
-}
-
-provider "scaleway" {
-  zone   = "fr-par-1"
-  region = "fr-par"
-}
 # Mise en place d'une IP publique
 resource "scaleway_instance_ip" "public_ip" {
   project_id = var.project_id
