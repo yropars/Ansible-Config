@@ -68,6 +68,6 @@ resource "scaleway_instance_server" "web" {
   security_group_id = scaleway_instance_security_group.www.id
   
   user_data = {
-    cloud-init = file("${path.module}/nextcloud.sh")
+    cloud-init = file("${path.module}/Nextcloud.sh")
   }
 }
