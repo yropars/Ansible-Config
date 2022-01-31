@@ -15,19 +15,5 @@ GRANT ALL PRIVILEGES ON nextcloud.* TO 'admin'@'localhost';
 FLUSH PRIVILEGES;
 quit;
 
-  # Suite
-md5sum -c nextcloud-x.y.z.tar.bz2.md5 < nextcloud-x.y.z.tar.bz2
-sha256sum -c nextcloud-x.y.z.tar.bz2.sha256 < nextcloud-x.y.z.tar.bz2
-md5sum  -c nextcloud-x.y.z.zip.md5 < nextcloud-x.y.z.zip
-sha256sum  -c nextcloud-x.y.z.zip.sha256 < nextcloud-x.y.z.zip
-
-wget https://download.nextcloud.com/server/releases/nextcloud-x.y.z.tar.bz2.asc
-wget https://nextcloud.com/nextcloud.asc
-gpg --import nextcloud.asc
-gpg --verify nextcloud-x.y.z.tar.bz2.asc nextcloud-x.y.z.tar.bz2
-
-tar -xjvf nextcloud-x.y.z.tar.bz2
-unzip nextcloud-x.y.z.zip
-
 cp -r nextcloud /path/to/webserver/document-root
 cp -r nextcloud /var/www
