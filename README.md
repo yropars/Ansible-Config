@@ -16,5 +16,4 @@ Une fois connecté à la machine virtuelle, On peut installer Terraform sur cett
 # unzip terraform_1.1.4_linux_amd64.zip
 # sudo mv terraform /usr/local/bin/
 # terraform --version
-# terraform init
 ```
