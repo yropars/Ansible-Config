@@ -10,10 +10,15 @@ Une fois connecté à la machine virtuelle, On peut installer Terraform sur cett
 # export SCW_ACCESS_KEY=<clé d'accès>
 # export SCW_SECRET_KEY=<clé secrète>
 # export SCW_DEFAULT_PROJECT_ID=default
+
 # git clone https://github.com/yropars/Terraform-Config.git 
 # apt-get install unzip
 # wget https://releases.hashicorp.com/terraform/1.1.4/terraform_1.1.4_linux_amd64.zip
 # unzip terraform_1.1.4_linux_amd64.zip
 # sudo mv terraform /usr/local/bin/
 # terraform --version
+
+# git clone https://github.com/yropars/Terraform-Config.git
+# cd /root/Terraform-Config
+
 ```
