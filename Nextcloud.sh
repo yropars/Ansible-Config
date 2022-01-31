@@ -1,4 +1,5 @@
   # Téléchargement de Nextcloud
+mkdir /root/test
 wget https://download.nextcloud.com/server/releases/nextcloud-19.0.1.zip
 sudo apt install unzip
 sudo unzip nextcloud-19.0.1.zip -d /var/www/
