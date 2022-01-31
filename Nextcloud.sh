@@ -5,6 +5,7 @@ sudo unzip nextcloud-19.0.1.zip -d /var/www/
 sudo chown www-data:www-data /var/www/nextcloud/ -R
 
   # Création d'une base de données et d'un utilisateur spécifique pour Nextcloud sur MariaDB
+sudo apt install mariadb-client-core-10.3 --assume-yes
 sudo mysql
 create database nextcloud;
 create user admin@localhost identified by 'epsi2022';
