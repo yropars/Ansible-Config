@@ -41,17 +41,11 @@ resource "scaleway_instance_security_group" "www" {
   inbound_rule {
     action = "accept"
     port   = "22"
-    ip     = "212.47.225.64"
   }
 
   inbound_rule {
     action = "accept"
     port   = "80"
-  }
-
-  inbound_rule {
-    action = "accept"
-    port   = "443"
   }
 }
 
@@ -72,4 +66,8 @@ resource "scaleway_instance_server" "web" {
   }
 
   security_group_id = scaleway_instance_security_group.www.id
+  
+  user_data = {
+    cloud-init = file("${path.module}/nextcloud.sh")
+  }
 }
